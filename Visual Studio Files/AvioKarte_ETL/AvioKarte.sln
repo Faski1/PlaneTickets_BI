@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "AvioKarte_SSIS", "AvioKarte_SSIS.dtproj", "{BCD857C1-9357-4C65-8BE7-C4C50993E67E}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "AvioKarte_OLAP", "..\AvioKarte_OLAP\AvioKarte_OLAP.dwproj", "{AD360D1C-97B5-410A-8702-F124AC0DB9EC}"
+EndProject
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "AvioKarte_TABULAR", "AvioKarte_TABULAR\AvioKarte_TABULAR.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "AvioKarte_SSRS", "..\AvioKarte_SSRS.rptproj", "{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugLocal|x86 = DebugLocal|x86
+		Development|x86 = Development|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Debug|x86.ActiveCfg = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Debug|x86.Build.0 = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.DebugLocal|x86.ActiveCfg = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.DebugLocal|x86.Build.0 = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Development|x86.ActiveCfg = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Development|x86.Build.0 = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Release|x86.ActiveCfg = Development
+		{BCD857C1-9357-4C65-8BE7-C4C50993E67E}.Release|x86.Build.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Debug|x86.ActiveCfg = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Debug|x86.Build.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Debug|x86.Deploy.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.DebugLocal|x86.ActiveCfg = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.DebugLocal|x86.Build.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.DebugLocal|x86.Deploy.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Development|x86.ActiveCfg = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Development|x86.Build.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Development|x86.Deploy.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Release|x86.ActiveCfg = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Release|x86.Build.0 = Development
+		{AD360D1C-97B5-410A-8702-F124AC0DB9EC}.Release|x86.Deploy.0 = Development
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Deploy.0 = Development|x86
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Debug|x86.ActiveCfg = Debug
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Debug|x86.Build.0 = Debug
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Debug|x86.Deploy.0 = Debug
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.DebugLocal|x86.ActiveCfg = DebugLocal
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.DebugLocal|x86.Build.0 = DebugLocal
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Development|x86.ActiveCfg = DebugLocal
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Development|x86.Build.0 = DebugLocal
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Release|x86.ActiveCfg = Release
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Release|x86.Build.0 = Release
+		{DA3E1867-43AC-4A59-9E81-CA7934CEA1AD}.Release|x86.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E39668C-F539-4ABB-85CC-2760ABD575F9}
+	EndGlobalSection
+EndGlobal

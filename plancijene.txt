@@ -1,0 +1,2 @@
+u dropdown meni kategorije karata ucitati i onda na izbor se prikaze cijena
+

@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>AvioKarte_OLAP</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>KHB1CiLSobCHFaMr21wSvRf0zCQ=11.09.2018. 17:59:1011.09.2018. 17:05:14</TimeStamp>
+        <ID>
+          <String>AvioKarteDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>IysqGxoduQ2JJ2/Ild7f+VYgOFo=11.09.2018. 17:06:5611.09.2018. 17:06:55</TimeStamp>
+        <ID>
+          <String>AvioKarteDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qbapqfFc4obQcCyLXOgvSbN2vnI=11.09.2018. 17:39:2011.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Avion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0KCLFwN6V86sed8/x8R8AGMBAN0=11.09.2018. 17:12:2711.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Aerodrom</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ltnzE3xPQd3atq4ROKrr8BYzN/8=11.09.2018. 17:34:4311.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Kupac</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+p4mrOXcI8bvQCSSQR1YkX/k4ag=11.09.2018. 17:39:5411.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Vrijeme</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9wF67j8Xla9BV9fFMRweGxlHrak=11.09.2018. 17:13:4211.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Kompanija</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vyr1PaFdRmK5oPQxOuOYGQ9E7H8=11.09.2018. 17:18:2411.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Lokacija</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6dVQV3ibn5uDK7EC4JSPTEJ8cy0=11.09.2018. 17:13:5511.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>Dim Klasa</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>OEgSmylPKrk1gblQua6ZiR6QjKE=11.09.2018. 18:04:3611.09.2018. 17:09:26u9su1LFHTLiApEo9dXmfqYagvPA=11.09.2018. 17:09:2711.09.2018. 17:09:26</TimeStamp>
+        <ID>
+          <String>AvioKarte_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>K/uihVg5k6ddP7DDxHS8aGInCPI=11.09.2018. 16:34:4511.09.2018. 16:34:45</TimeStamp>
+      <ID>
+        <String>AvioKarte_OLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-09-11T16:04:42.143333Z</LastDeployed>
+</DeploymentSnapshot>

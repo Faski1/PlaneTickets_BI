@@ -1,0 +1,272 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a7a0f3b7-94c4-4472-9f0b-bb20a034542b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AvioKarteDW</ID>
+  <Name>AvioKarteDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>AvioKarteDW</DataSourceID>
+  <Schema>
+    <xs:schema id="AvioKarteDW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="AvioKarteDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="146af7d2-f721-4a42-97d0-0f3c526cbe93">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimAerodrom" msprop:design-time-name="a38ac4e6-3c0a-439a-94c9-7ea188ac6659" msprop:DbTableName="DimAerodrom" msprop:FriendlyName="DimAerodrom" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AerodromKey" msprop:design-time-name="08da057a-e868-4f66-b9f7-2a541fa129c0" msprop:DbColumnName="AerodromKey" msprop:FriendlyName="AerodromKey" type="xs:int" />
+                  <xs:element name="Aerodrom" msprop:design-time-name="8aff20aa-90e2-4c58-8745-f40fda7e1996" msprop:DbColumnName="Aerodrom" msprop:FriendlyName="Aerodrom" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimAvion" msprop:design-time-name="b5bfd524-17ac-43c8-9b57-ed03ba9d2cb3" msprop:DbTableName="DimAvion" msprop:FriendlyName="DimAvion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AvionId" msprop:design-time-name="d2a4cb10-c822-4111-9213-434afc6c3cbf" msprop:DbColumnName="AvionId" msprop:FriendlyName="AvionId" type="xs:int" />
+                  <xs:element name="Naziv" msprop:design-time-name="bc6f1405-b187-411e-831f-63b6ef2cb776" msprop:DbColumnName="Naziv" msprop:FriendlyName="Naziv" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Registracija" msprop:design-time-name="cf36b8a0-3d88-45ef-a765-ed64e9659e64" msprop:DbColumnName="Registracija" msprop:FriendlyName="Registracija" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Velicina" msprop:design-time-name="7b4e4418-a65b-4dbb-9dbd-5fc0a24f165e" msprop:DbColumnName="Velicina" msprop:FriendlyName="Velicina" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKlasa" msprop:design-time-name="f7d6e3d5-eca0-41a5-b2f9-46a11d6ded50" msprop:DbTableName="DimKlasa" msprop:FriendlyName="DimKlasa" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KlasaKey" msprop:design-time-name="4a39aff8-6229-4723-b07c-d9c549108a8c" msprop:DbColumnName="KlasaKey" msprop:FriendlyName="KlasaKey" type="xs:int" />
+                  <xs:element name="Klasa" msprop:design-time-name="9229c053-987e-44c1-9e39-d12a5f629ca2" msprop:DbColumnName="Klasa" msprop:FriendlyName="Klasa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKompanija" msprop:design-time-name="a3f099f5-dab2-419d-898c-2bfab9c1fb79" msprop:DbTableName="DimKompanija" msprop:FriendlyName="DimKompanija" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KompanijaKey" msprop:design-time-name="56daa7d1-01f4-4e8e-9115-c7df741fb773" msprop:DbColumnName="KompanijaKey" msprop:FriendlyName="KompanijaKey" type="xs:int" />
+                  <xs:element name="Kompanija" msprop:design-time-name="a83727d0-0a2c-46df-bce1-e78c0128d35a" msprop:DbColumnName="Kompanija" msprop:FriendlyName="Kompanija">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimKupac" msprop:design-time-name="2c444353-b75f-4745-9d94-5d2c7b2685bc" msprop:DbTableName="DimKupac" msprop:FriendlyName="DimKupac" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KupacId" msprop:design-time-name="1f5736df-416e-40f3-bae2-a17699f6861e" msprop:DbColumnName="KupacId" msprop:FriendlyName="KupacId" type="xs:int" />
+                  <xs:element name="Ime" msprop:design-time-name="7805f461-19d7-4b28-821a-17584b07dc7d" msprop:DbColumnName="Ime" msprop:FriendlyName="Ime" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Prezime" msprop:design-time-name="dc76ffd0-be8f-4289-97a2-e91f5596de5e" msprop:DbColumnName="Prezime" msprop:FriendlyName="Prezime" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Spol" msprop:design-time-name="01a81b5a-ab5f-4958-bd01-0b5c703cddb2" msprop:DbColumnName="Spol" msprop:FriendlyName="Spol" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BrojPasosa" msprop:design-time-name="fe0f9be3-d8f6-47f5-97c5-e4eaa580539c" msprop:DbColumnName="BrojPasosa" msprop:FriendlyName="BrojPasosa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimLokacija" msprop:design-time-name="86f95ea0-1ac0-4e4f-9c54-05fb1e609cb9" msprop:DbTableName="DimLokacija" msprop:FriendlyName="DimLokacija" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LokacijaKey" msprop:design-time-name="9844a473-fedd-4ce2-aec4-a041acb693a5" msprop:DbColumnName="LokacijaKey" msprop:FriendlyName="LokacijaKey" type="xs:int" />
+                  <xs:element name="Drzava" msprop:design-time-name="ae603d07-96b3-48cf-9c40-13a7597353fd" msprop:DbColumnName="Drzava" msprop:FriendlyName="Drzava" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Grad" msprop:design-time-name="002d0777-3425-4732-8774-9aec04f119f0" msprop:DbColumnName="Grad" msprop:FriendlyName="Grad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimVrijeme" msprop:design-time-name="47cb7f7f-d397-4231-9b1b-d99d1ea317cd" msprop:DbTableName="DimVrijeme" msprop:FriendlyName="DimVrijeme" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VrijemeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="52dee4dd-2f33-45e2-a292-703e39573965" msprop:DbColumnName="VrijemeId" msprop:FriendlyName="VrijemeId" type="xs:int" />
+                  <xs:element name="Datum" msprop:design-time-name="d4afbbaa-3e6b-4535-8244-8268b79810d4" msprop:DbColumnName="Datum" msprop:FriendlyName="Datum" type="xs:dateTime" />
+                  <xs:element name="Godina" msprop:design-time-name="c29fe01d-8458-4fdd-a9bc-2fb9a14f2a8d" msprop:DbColumnName="Godina" msprop:FriendlyName="Godina" type="xs:int" />
+                  <xs:element name="Mjesec" msprop:design-time-name="9b8bcac7-bf75-4588-96a1-63cbb0b07950" msprop:DbColumnName="Mjesec" msprop:FriendlyName="Mjesec" type="xs:int" />
+                  <xs:element name="Dan" msprop:design-time-name="468a71ac-092b-4295-8582-e48db3fe6262" msprop:DbColumnName="Dan" msprop:FriendlyName="Dan" type="xs:int" />
+                  <xs:element name="Kvartal" msprop:design-time-name="f0908af6-ca89-41aa-8fd1-685461d358be" msprop:DbColumnName="Kvartal" msprop:FriendlyName="Kvartal" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactKarta" msprop:design-time-name="c3f17f2b-8fd0-40fa-9584-f0efc37bfc6b" msprop:DbTableName="FactKarta" msprop:FriendlyName="FactKarta" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="KartaId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d4e664b9-7545-4350-9c59-d4daf8fc9f02" msprop:DbColumnName="KartaId" msprop:FriendlyName="KartaId" type="xs:int" />
+                  <xs:element name="KlasaKey" msprop:design-time-name="20ad4db0-458a-4bae-bcc2-39ef6f6b9c2b" msprop:DbColumnName="KlasaKey" msprop:FriendlyName="KlasaKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="KupacKey" msprop:design-time-name="477f2c8c-9f75-4017-af4c-d54bfd7b693a" msprop:DbColumnName="KupacKey" msprop:FriendlyName="KupacKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="LokacijaKey" msprop:design-time-name="2bb910f1-d990-4063-a9ea-cc178c5c31d0" msprop:DbColumnName="LokacijaKey" msprop:FriendlyName="LokacijaKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="VrijemeKey" msprop:design-time-name="5bd38ce3-37fa-44b3-8bcc-dedcfce90d9a" msprop:DbColumnName="VrijemeKey" msprop:FriendlyName="VrijemeKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="PolazakAerodromKey" msprop:design-time-name="529d5bf8-fde6-4f7a-bfe1-fdac0593f367" msprop:DbColumnName="PolazakAerodromKey" msprop:FriendlyName="PolazakAerodromKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="DolazakAerodromKey" msprop:design-time-name="0f02b23c-c0d9-44ec-8a1c-130d5ab1b09c" msprop:DbColumnName="DolazakAerodromKey" msprop:FriendlyName="DolazakAerodromKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="KompanijaKey" msprop:design-time-name="d22288e7-0a1c-45f9-ad89-5308a88c2c58" msprop:DbColumnName="KompanijaKey" msprop:FriendlyName="KompanijaKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvionKey" msprop:design-time-name="a4ab56c9-2621-4b82-be79-30b779da39b5" msprop:DbColumnName="AvionKey" msprop:FriendlyName="AvionKey" type="xs:int" minOccurs="0" />
+                  <xs:element name="Iznos" msprop:design-time-name="d15ed261-f492-40d5-9ee8-39c538331968" msprop:DbColumnName="Iznos" msprop:FriendlyName="Iznos" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimAerodrom" />
+          <xs:field xpath="AerodromKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimAvion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimAvion" />
+          <xs:field xpath="AvionId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKlasa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKlasa" />
+          <xs:field xpath="KlasaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKompanija_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKompanija" />
+          <xs:field xpath="KompanijaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimKupac_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimKupac" />
+          <xs:field xpath="KupacId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimLokacija_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimLokacija" />
+          <xs:field xpath="LokacijaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimVrijeme_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimVrijeme" />
+          <xs:field xpath="VrijemeId" />
+        </xs:unique>
+        <xs:unique name="dbo_FactKarta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="KartaId" />
+        </xs:unique>
+        <xs:keyref name="FK_Karta_Klasa" refer="dbo_DimKlasa_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="KlasaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_Lokacija" refer="dbo_DimLokacija_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="LokacijaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_DolazakAerodrom" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="DolazakAerodromKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_Kompanija" refer="dbo_DimKompanija_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="KompanijaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_Vrijeme" refer="dbo_DimVrijeme_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="VrijemeKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_Kupac" refer="dbo_DimKupac_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="KupacKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_PolazakAerodrom" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="PolazakAerodromKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Karta_Avion" refer="dbo_DimAvion_Constraint1">
+          <xs:selector xpath=".//dbo_FactKarta" />
+          <xs:field xpath="AvionKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <AvioKarteDW xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,649 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="af71c8dd-bb6b-4a60-b822-217427f887b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AvioKarte_Cube</ID>
+  <Name>AvioKarte_Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="34" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6768" scrolltop="849" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="21669" y="13070" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimKompanija" left="20" top="8534" logicalid="17" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimKompanija" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAerodrom" left="3178" top="1693" logicalid="18" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAerodrom" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimVrijeme" left="8578" top="0" logicalid="19" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimVrijeme" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactKarta" left="5420" top="6974" logicalid="20" controlid="4" masterid="0" hint1="0" hint2="0" width="3916" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004c0f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactKarta" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimKlasa" left="11736" top="5972" logicalid="21" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimKlasa" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimKupac" left="3178" top="15376" logicalid="22" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimKupac" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLokacija" left="8578" top="15376" logicalid="23" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLokacija" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAvion" left="11736" top="10251" logicalid="24" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAvion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="9074" logicalid="25" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Kompanija]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="9473" />
+              <point x="4220" y="9473" />
+              <point x="4220" y="9474" />
+              <point x="5420" y="9474" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4829" top="3073" logicalid="26" controlid="10" masterid="0" hint1="0" hint2="0" width="2849" height="4201" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_PolazakAerodrom]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5228" y="3572" />
+              <point x="5228" y="5273" />
+              <point x="7378" y="5273" />
+              <point x="7378" y="6974" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3179" top="3073" logicalid="27" controlid="11" masterid="0" hint1="0" hint2="0" width="2849" height="4201" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_DolazakAerodrom]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="1" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3578" y="3572" />
+              <point x="3578" y="5273" />
+              <point x="5728" y="5273" />
+              <point x="5728" y="6974" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8728" top="3073" logicalid="28" controlid="12" masterid="0" hint1="0" hint2="0" width="1750" height="4201" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Vrijeme]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="5" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10078" y="3572" />
+              <point x="10078" y="5273" />
+              <point x="9028" y="5273" />
+              <point x="9028" y="6974" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9036" top="9724" logicalid="29" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="2289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Avion]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="14" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11736" y="11613" />
+              <point x="10536" y="11613" />
+              <point x="10536" y="10024" />
+              <point x="9336" y="10024" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4279" top="11674" logicalid="30" controlid="14" masterid="0" hint1="0" hint2="0" width="2299" height="4202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Kupac]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4678" y="15376" />
+              <point x="4678" y="13675" />
+              <point x="6278" y="13675" />
+              <point x="6278" y="11974" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7628" top="11674" logicalid="31" controlid="15" masterid="0" hint1="0" hint2="0" width="2850" height="4202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Lokacija]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10078" y="15376" />
+              <point x="10078" y="13675" />
+              <point x="7928" y="13675" />
+              <point x="7928" y="11974" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9036" top="6512" logicalid="32" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="2162" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Karta_Klasa]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="12" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11736" y="6911" />
+              <point x="10536" y="6911" />
+              <point x="10536" y="8374" />
+              <point x="9336" y="8374" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6768</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>849</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="1710096c-4a5a-4764-b6ed-422d3134c158">
+      <ID>Polazak Aerodrom</ID>
+      <Name>Polazak Aerodrom</Name>
+      <DimensionID>Dim Aerodrom</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b09650aa-b746-4704-95a6-4d7e88381a04">
+          <AttributeID>Aerodrom Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab8a605e-ae97-43e8-b997-df96201c6138">
+          <AttributeID>Aerodrom</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0a575142-a633-4bdb-b78f-da787f1bab0d">
+      <ID>Dim Kompanija</ID>
+      <Name>Dim Kompanija</Name>
+      <DimensionID>Dim Kompanija</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2f95bbd0-7d56-4c3e-b06f-b171999bd644">
+          <AttributeID>Kompanija Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e6d264a-ad49-4b25-9dcd-65337d317013">
+          <AttributeID>Kompanija</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2719aa4d-b8dd-4dde-b091-2b238c86b307">
+      <ID>Dolazak Aerodrom</ID>
+      <Name>Dolazak Aerodrom</Name>
+      <DimensionID>Dim Aerodrom</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ce2ff617-006c-4d28-8274-9d65ae8e01dc">
+          <AttributeID>Aerodrom Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72683eb4-174e-4436-b8c6-0cb97476a109">
+          <AttributeID>Aerodrom</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a4e7f505-ab04-4eff-a7a1-d11393b2eef2">
+      <ID>Dim Lokacija</ID>
+      <Name>Dim Lokacija</Name>
+      <DimensionID>Dim Lokacija</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="612fad4c-ede0-4bfe-a2d5-2dc7c7ad644b">
+          <AttributeID>Lokacija Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20f8b367-0fc6-43a5-a55f-9c715a91bf12">
+          <AttributeID>Drzava</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e28b1a49-7f89-41ef-80b0-574053a2bbea">
+          <AttributeID>Grad</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="31749a57-8bc4-4753-8c12-3aefd82e87bb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ab20a8e5-6bdf-4d05-9cf7-e82c2aca84c9">
+      <ID>Dim Klasa</ID>
+      <Name>Dim Klasa</Name>
+      <DimensionID>Dim Klasa</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ab78d744-3aba-45bb-93a0-9fa1c09bf912">
+          <AttributeID>Klasa Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fcf80cd-345d-4a94-b560-1e7c7ddf7130">
+          <AttributeID>Klasa</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="97c1d52c-6f95-43fc-8448-86ab33cae9d6">
+      <ID>Dim Avion</ID>
+      <Name>Dim Avion</Name>
+      <DimensionID>Dim Avion</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dddbe261-4307-49ff-918a-dfcb8a4ba0a4">
+          <AttributeID>Avion Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a72b911-291e-4b32-9b3c-ba83b38a23b1">
+          <AttributeID>Naziv</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92656bf5-4bd9-4c5b-911b-f3dae606923a">
+          <AttributeID>Registracija</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a42ac358-06ea-47fd-9847-2137aa334d09">
+          <AttributeID>Velicina</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a329d3fc-f10f-44d5-a518-2be343f57b26">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="2f9fcab0-c422-475d-91d3-60005c8d46cb">
+      <ID>Dim Kupac</ID>
+      <Name>Dim Kupac</Name>
+      <DimensionID>Dim Kupac</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1ea99d72-ef49-46ee-ac0b-6366a53f3437">
+          <AttributeID>Kupac Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb1da118-6b35-4e4b-8b13-09779ec66417">
+          <AttributeID>Ime</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93f13677-0f9e-4584-859e-3fb069ccfe8f">
+          <AttributeID>Prezime</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="adf60bf3-46a5-4233-a67a-c94a6e2d8ea7">
+          <AttributeID>Spol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d5e59691-9c5d-4e04-a8b8-ecd8ac77aa36">
+          <AttributeID>Broj Pasosa</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="905676ed-286b-4272-a320-623ae640a948">
+      <ID>Dim Vrijeme</ID>
+      <Name>Dim Vrijeme</Name>
+      <DimensionID>Dim Vrijeme</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b8f8320f-558f-408c-9262-1c6ee807915d">
+          <AttributeID>Vrijeme Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="673fd16f-2c57-4f11-bfa3-62d8c9ebd686">
+          <AttributeID>Datum</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="087257ec-341e-4966-a654-2a2ee36b72ba">
+          <AttributeID>Godina</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09495ddf-268d-43ac-9def-8d0fb08e7c41">
+          <AttributeID>Mjesec</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53d088aa-82f6-4ebb-ba23-447800f77488">
+          <AttributeID>Dan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dd4b54c-2ed9-4eb6-bf97-6e7f0f323b3b">
+          <AttributeID>Kvartal</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="24562c2e-90b2-4aed-8c4f-9b5bf970289c">
+      <ID>Fact Karta</ID>
+      <Name>Fact Karta</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6b895475-962f-4b8f-b94b-a17708dd5d2b">
+          <ID>Iznos</ID>
+          <Name>Iznos</Name>
+          <Source dwd:design-time-name="f5365288-4372-4126-b324-5e7f57ead199">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b4cfa65c-4a12-4940-bfcb-46f72a239c2c">
+              <TableID>dbo_FactKarta</TableID>
+              <ColumnID>Iznos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c9169629-693c-4ec2-abef-4e556d7e6ad9">
+          <ID>Fact Karta Count</ID>
+          <Name>BrojKarti</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b960e808-41d0-4239-8fdc-b9694bdc614c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="be1d95c9-1c69-4e0c-b98d-dee61c0e2b94">
+              <TableID>dbo_FactKarta</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ab34ffb8-e66c-45ab-acb8-cd7736c3ccec">
+          <CubeDimensionID>Dim Avion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d166c57b-4ad5-4179-a57e-acd6eb8d638f">
+              <AttributeID>Avion Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33baa6b5-22d8-441a-919b-be0206cac440">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="14185818-1f1b-42f9-92e6-cd4a246f41aa">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>AvionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ad550655-0107-4a86-8f1b-18b02ec12a22">
+          <CubeDimensionID>Polazak Aerodrom</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d9ec2467-d254-4a6a-87ec-f34d59177d66">
+              <AttributeID>Aerodrom Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d8f2afaa-8134-422e-83ec-91529f8b99c0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5a5c3a91-6f9e-47ff-a05a-5126f3d69c4f">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>PolazakAerodromKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="216fbedc-aa6b-4c01-83be-929c6052a36a">
+          <CubeDimensionID>Dim Kupac</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7524a466-f41b-4669-a8de-b8d9236d1160">
+              <AttributeID>Kupac Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="57c4f1c3-383e-43ce-91a2-1b5a4a1df51c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="debd98e0-d060-4bb3-9367-c831ae7c74b6">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>KupacKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="db76eae1-06b4-42e4-abac-29b384c006ff">
+          <CubeDimensionID>Dim Vrijeme</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="efa05b49-64c5-4a64-8aa3-9d9a9cbc93d1">
+              <AttributeID>Vrijeme Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c393e745-8a94-4b37-ac79-2e0255a11a1e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f106256-e929-48f5-9d24-22e4368df292">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>VrijemeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b964af9a-715a-463c-812e-8421f23aadc3">
+          <CubeDimensionID>Dim Lokacija</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85689945-bc59-4184-9ceb-7f9e5c64a1eb">
+              <AttributeID>Lokacija Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7e931259-311b-4f8f-b224-07d6b3061ba9">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a96c918-d0d4-4211-990a-1935ff697cf0">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>LokacijaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08e89772-085d-4407-9d7a-5cc0d7df4fbb">
+          <CubeDimensionID>Dolazak Aerodrom</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b36df4e-c092-46a7-a53b-aad2222ee61b">
+              <AttributeID>Aerodrom Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="036da336-6974-418d-b3d7-f502b60bc3ed">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66cbf462-2de3-4ac1-80b4-f7754a0dbd6b">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>DolazakAerodromKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ec5ab17b-f513-45ef-a556-dee1db9f8b8c">
+          <CubeDimensionID>Dim Kompanija</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8c306183-6efb-4572-8877-21776370843a">
+              <AttributeID>Kompanija Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2d39c23a-2040-4c6a-9923-8bdea6aa0ebe">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="523a9ed9-e6d2-49c7-aec6-343e46e7af20">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>KompanijaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f23935e8-d7ac-4fbe-8af8-41c317dc7df1">
+          <CubeDimensionID>Dim Klasa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ede5a5e-17dd-4d84-a0fc-286bb45d4708">
+              <AttributeID>Klasa Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="63c65f8f-5474-469a-b0be-d42794645572">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="38c9f825-ea08-48b2-a0e1-1b3f71164c18">
+                    <TableID>dbo_FactKarta</TableID>
+                    <ColumnID>KlasaKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="dd1dffa0-6d43-4564-bcb3-136d302fb57c">
+    <DataSourceViewID>AvioKarteDW</DataSourceViewID>
+  </Source>
+</Cube>

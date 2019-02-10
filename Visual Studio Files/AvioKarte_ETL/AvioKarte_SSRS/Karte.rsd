@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>AvioKompanija_Karte</DataSourceReference>
+      <CommandText>SELECT P.Pasos_Broj, 
+P.Ime + ' '+ P.Prezime as Putnik,
+CONVERT(nvarchar,K.DatumVrijeme_Kupovina,104) as Datum_Kupovine,
+CAST(K.Iznos AS varchar)+' KM' as Cijena,
+AerPolaziste.AerodromID as AerodromPolazisteId,
+AerPolaziste.Naziv as Polaziste,
+AerDestinacija.AerodromID as AerodromDestinacijaId,
+AerDestinacija.Naziv as Destinacija,
+Kl.KlasaID as KlasaId,
+Kl.Naziv as Klasa
+FROM Putnik as P JOIN Karta as K
+ON P.PutnikID=K.PutnikID JOIN Grad as G
+ON P.GradID=G.GradID JOIN Drzava as D
+ON D.DrzavaID=G.DrzavaID JOIN Linija as L
+ON L.LinijaID=K.LinijaID JOIN Aerodrom as AerPolaziste
+ON AerPolaziste.AerodromID=L.Polaziste_AerodromID JOIN Aerodrom as AerDestinacija
+ON AerDestinacija.AerodromID=L.Destinacija_AerodromID JOIN Klasa as Kl
+ON Kl.KlasaID=K.KlasaID</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Pasos_Broj">
+        <DataField>Pasos_Broj</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Putnik">
+        <DataField>Putnik</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Datum_Kupovine">
+        <DataField>Datum_Kupovine</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Cijena">
+        <DataField>Cijena</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AerodromPolazisteId">
+        <DataField>AerodromPolazisteId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Polaziste">
+        <DataField>Polaziste</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AerodromDestinacijaId">
+        <DataField>AerodromDestinacijaId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Destinacija">
+        <DataField>Destinacija</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="KlasaId">
+        <DataField>KlasaId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Klasa">
+        <DataField>Klasa</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
